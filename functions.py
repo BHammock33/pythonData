@@ -64,3 +64,24 @@ def freq_table_multi(data_set, index):
             frequency_table[value] = 1
     return frequency_table
 ratings_ft_mutli = freq_table_multi(apps_data, 7)
+
+def find_sum(a_list):
+    a_sum = 0
+    for element in a_list:
+        a_sum += float(element)
+    return a_sum
+
+def find_length(a_list):
+    length = 0
+    for element in a_list:
+        length += 1
+    return length
+
+def mean(a_list_of_numbers):
+    sum_list = find_sum(a_list_of_numbers)
+    len_list =  find_length(a_list_of_numbers)
+    mean_list = sum_list / len_list
+    return mean_list
+list_1 = [10,5,15]
+print(mean(list_1))
+    
