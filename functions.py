@@ -52,3 +52,15 @@ def freq_table_2(index):
     return ratings_table2
 ratings_ft = freq_table_2(7)
 print(ratings_ft)
+
+
+def freq_table_multi(data_set, index):
+    frequency_table = {}
+    for row in data_set[1:]:
+        value = row[index]
+        if value in frequency_table: 
+            frequency_table[value] += 1
+        else:
+            frequency_table[value] = 1
+    return frequency_table
+ratings_ft_mutli = freq_table_multi(apps_data, 7)
