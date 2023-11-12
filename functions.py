@@ -84,9 +84,16 @@ def mean(a_list_of_numbers):
     return mean_list
 list_1 = [10,5,15]
 print(mean(list_1))
+def extract_better(data_set, index):
+    column = []
+    for row in data_set[1:]:
+        value = row[index]
+        column.append(value)
+    return column
 
-#
-##for row in apps_data[1:]:
-##    rating_sum.append(rating)
-#avg_rating = sum(rating_sum) / len(rating_sum)
-#print(avg_rating)
+def mean_better(data_set, index):
+    values_list = extract_better(data_set, index)
+    return find_sum(values_list) / find_length(values_list)
+
+avg_price = mean_better(apps_data, 4)
+print(avg_price)    
