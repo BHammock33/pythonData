@@ -84,4 +84,9 @@ def mean(a_list_of_numbers):
     return mean_list
 list_1 = [10,5,15]
 print(mean(list_1))
-    
+
+#
+##for row in apps_data[1:]:
+##    rating_sum.append(rating)
+#avg_rating = sum(rating_sum) / len(rating_sum)
+#print(avg_rating)
